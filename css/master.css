@@ -1,0 +1,19 @@
+
+.intro{
+  color: white;
+  background-color: hsla(235, 100%, 22%, 1);
+  /*
+    rgba(0, 9, 112, 1)
+    #000970
+  */
+  height:inherit;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+#header-image{
+  padding: 10px 0;
+}
