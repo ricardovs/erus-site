@@ -17,3 +17,18 @@ img{
 #header-image{
   padding: 10px 0;
 }
+
+.navbar-nav > li > a, .navbar-header > a{
+  color: black;
+}
+
+
+.navbar-toggle .icon-bar {
+background-color: #000;
+}
+
+/* background */
+.navbar-toggle {
+border-color: #000;
+background-color: white;
+}
