@@ -1,7 +1,7 @@
 
 .intro{
   color: white;
-  background-color: hsla(235, 100%, 22%, 1);
+  background-color:  #000970;
   /*
     rgba(0, 9, 112, 1)
     #000970
@@ -15,13 +15,17 @@ img{
 }
 
 #header-image{
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .navbar-nav > li > a, .navbar-header > a{
   color: black;
 }
 
+.navbar-nav > li > a:hover,  .navbar-header > a:hover{
+    color: white;
+    background-color: #000970;
+}
 
 .navbar-toggle .icon-bar {
 background-color: #000;
@@ -32,3 +36,20 @@ background-color: #000;
 border-color: #000;
 background-color: white;
 }
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+  #header-image{
+    padding: 50px auto;
+  }
+ }
