@@ -19,7 +19,7 @@ img{
 }
 
 .navbar-nav > li > a:hover, .nav .open > a ,.nav .open > a:hover, .navbar-nav > li > a:active, .nav .open>a:focus, .navbar-header > a:hover, .dropdown.open > .dropdown-menu > li > a:focus,
-.dropdown.open>.dropdown-menu>li>a:hover  
+.dropdown.open>.dropdown-menu>li>a:hover
 {
 color: white;
 background-color: #000970;
@@ -37,7 +37,9 @@ border-color: #000;
 background-color: white;
 }
 
-
+#header-image{
+  margin:  5vh auto 3vh auto;
+}
 
 
 /* Small devices (tablets, 768px and up) */
@@ -49,7 +51,4 @@ background-color: white;
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {
 
-  #header-image{
-    padding: 50px auto;
-  }
  }
