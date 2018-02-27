@@ -18,8 +18,13 @@ img{
   color: black;
 }
 
+.navbar-collapse.collapse > ul.navbar-nav.nav > li{
+  display: table-row;
+  width: 100%;
+}
+
 .navbar-nav > li > a:hover, .nav .open > a ,.nav .open > a:hover, .navbar-nav > li > a:active, .nav .open>a:focus, .navbar-header > a:hover, .dropdown.open > .dropdown-menu > li > a:focus,
-.dropdown.open>.dropdown-menu>li>a:hover  
+.dropdown.open>.dropdown-menu>li>a:hover
 {
 color: white;
 background-color: #000970;
