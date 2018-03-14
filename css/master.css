@@ -10,20 +10,35 @@ img{
   height: auto;
 }
 
+.navbar-header > button.navbar-toggle.collapsed:hover{
+  border-color: white;
+  background-color: #000970;
+}
+
+.navbar-header > button.navbar-toggle.collapsed:hover > .icon-bar{
+  background-color: white;
+}
+
 #header-image{
   padding: 10px;
+  margin-top: 1em;
 }
 
 .navbar-nav > li > a, .navbar-header > a{
   color: black;
 }
+.navbar-header > a, .navbar-collapse > ul.navbar-nav.nav > li{
+  text-indent: 1em;
+}
 
 .navbar-collapse.collapse > ul.navbar-nav.nav > li{
-  display: table-row;
+  /* display: table-row; */
   width: 100%;
 }
 
-.navbar-nav > li > a:hover, .nav .open > a ,.nav .open > a:hover, .navbar-nav > li > a:active, .nav .open>a:focus, .navbar-header > a:hover, .dropdown.open > .dropdown-menu > li > a:focus,
+.navbar-nav > li > a:hover, .nav .open > a ,.nav .open > a:hover,
+.navbar-nav > li > a:active, .nav .open>a:focus, .navbar-header > a:hover,
+.dropdown.open > .dropdown-menu > li > a:focus,
 .dropdown.open>.dropdown-menu>li>a:hover
 {
 color: white;
