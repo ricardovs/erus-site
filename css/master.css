@@ -45,7 +45,9 @@ color: white;
 background-color: #000970;
 }
 
-
+#page-content > p{
+  text-align: justify;
+}
 
 .navbar-toggle .icon-bar {
 background-color: #000;
