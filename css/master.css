@@ -1,10 +1,12 @@
-
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
 .intro{
   color: white;
   background-color:  #000970;
   height:inherit;
 }
-
+body{
+  font-family: 'Roboto', sans-serif;
+}
 img{
   max-width: 100%;
   height: auto;
@@ -15,10 +17,21 @@ img{
   background-color: #000970;
 }
 
+.content{
+  font-size: 1.3em;
+
+}
 .navbar-header > button.navbar-toggle.collapsed:hover > .icon-bar{
   background-color: white;
 }
 
+.navbar-fixed-left{
+  padding-right: 0px;
+}
+.body-wrapper{
+  padding-left: 0px;
+  padding-right: 30px;
+}
 #header-image{
   padding: 10px;
   margin-top: 1em;
@@ -26,6 +39,7 @@ img{
 
 .navbar-nav > li > a, .navbar-header > a{
   color: black;
+  font-size: 1.2em;
 }
 .navbar-header > a, .navbar-collapse > ul.navbar-nav.nav > li{
   text-indent: 1em;
