@@ -2,7 +2,7 @@
 .intro{
   color: white;
   background-color:  #000000;
-  height:inherit;
+  height:auto;
 }
 body{
   font-family: 'Roboto', sans-serif;
@@ -13,10 +13,11 @@ img{
 }
 #header-image{
   padding: 10px;
+  max-width:50%;
 }
 
-.navbar-nav > li > a, .navbar-header > a{
-  color: black;
+.navbar-nav > li, .navbar-header {
+  color: black !important;
 }
 .slider {
     width: 100%;
@@ -65,9 +66,10 @@ img{
 }
 
 .navbar-nav > li > a, .navbar-header > a{
-  color: black;
+  color: inherit;
   font-size: 1.2em;
 }
+
 .slider.rounded img {
   border-radius: 50%;
 }
@@ -82,13 +84,18 @@ img{
   color: black !important;
 }
 
-.navbar-nav > li > a:hover, .nav .open > a ,.nav .open > a:hover,
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .nav .open > a ,.nav .open > a:hover,
 .navbar-nav > li > a:active, .nav .open>a:focus, .navbar-header > a:hover,
 .dropdown.open > .dropdown-menu > li > a:focus,
 .dropdown.open>.dropdown-menu>li>a:hover
 {
-color: white;
-background-color: #000000;
+color: white !important;
+background-color: #000000 !important;
+}
+
+#navbar > ul > li.active{
+  color: #333 !important;
+  background-color: #90A4AE !important;
 }
 
 #page-content > p{
@@ -166,5 +173,130 @@ background-color: white;
     width:300px;
     object-fit: cover;
     margin: 0 auto; /* it centers any block level element */
+  }
+}
+
+
+
+
+
+
+html, body { height: 100%; }
+
+.container {
+	/* min-height: 100%; */
+	overflow: hidden;
+}
+
+#navbar-container, #body-container{
+	margin-bottom: -9999px;
+	padding-bottom: 10100px;
+}
+
+
+#navbar-container{
+  background: #B0BEC5;
+}
+@media only screen and (max-width: 768px){
+  #navbar-container{
+    background: #fff;
+  }
+  .navbar-header{
+    background: #B0BEC5;
+  }
+  .container{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}
+
+
+
+
+.navbar-nav > li > a:active{
+  background: black!important;
+}
+
+
+
+
+
+
+
+
+/* FOOTER do MATHEUS */
+
+
+.rodape-logo{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  max-height:100px;
+  margin: 0 auto;
+}
+
+
+
+.rodape{
+	background-color: black;
+    color: white;
+    padding-top: 20px;
+}
+.rodape h4{
+    padding-bottom: 10px;
+}
+
+.rodape-conteudo{
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+.rodape-imagem{
+  display:block;
+  margin: 0 auto;
+  /* padding:10px; */
+}
+
+.center-aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aligner-item {
+  max-width: 50%;
+}
+
+.coluna{
+  max-height: 100%;
+}
+footer{
+  background: black;
+  color:white;
+
+}
+
+.social-media{
+  font-size: 48px;
+}
+
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fa-youtube{
+  color: #c4302b;
+}
+
+@media only screen and (max-width: 768px){
+  .col-centered{
+    text-align:center;
   }
 }
