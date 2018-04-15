@@ -73,26 +73,31 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script>
-    $(".center").slick({
-      dots: true,
-      infinite: true,
-      centerMode: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      responsive: [{
-        breakpoint: 768,
-        settings: {
-            slidesToShow: 1
-        }
-    },
-    {
-        breakpoint: 992,
-        settings: {
-            slidesToShow: 2,
-            centerMode: false
-        }
-    }
-    ]
+    // $(".center").slick({
+    //   dots: true,
+    //   centerMode: true,
+    //   slidesToShow: 1,
+    //   slidesToScroll: 1
+    // });
+    $('.center').slick({
+        infinite: true,
+        centerMode:true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+			{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ],
     });
   </script>
 </body>

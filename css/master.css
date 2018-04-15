@@ -22,6 +22,7 @@ img{
 .slider {
     width: 100%;
     margin: 100px auto;
+    padding-top: 30px;
 }
 
 /* nav.nav{
@@ -57,7 +58,7 @@ img{
   padding-right: 0px;
 }
 .body-wrapper{
-  padding-left: 0px;
+  padding-left: 30px;
   padding-right: 30px;
 }
 #header-image{
@@ -72,6 +73,9 @@ img{
 
 .slider.rounded img {
   border-radius: 50%;
+  border-color: #333;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .navbar-collapse.collapse > ul.navbar-nav.nav > li{
@@ -83,6 +87,24 @@ img{
 .slick-next:before {
   color: black !important;
 }
+.slick-prev,
+.slick-next
+{
+  display:block !important;
+  width:50px!important;
+  height:50px!important;
+  background:white!important;
+  border-radius:50%;
+  z-index: 9999;
+}
+.slick-prev{
+  left:25px!important;
+}
+.slick-next{
+  right:25px!important;
+}
+
+
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus, .nav .open > a ,.nav .open > a:hover,
 .navbar-nav > li > a:active, .nav .open>a:focus, .navbar-header > a:hover,
@@ -153,8 +175,8 @@ background-color: white;
 
 
 .slider-img{
-  height:100px;
-  width:100px;
+  height:150px;
+  width:150px;
   object-fit: cover;
   margin: 0 auto; /* it centers any block level element */
 }
@@ -169,8 +191,8 @@ background-color: white;
 }
 @media only screen and (max-width: 768px) {
   .slider-img{
-    height:300px;
-    width:300px;
+    height:200px;
+    width:200px;
     object-fit: cover;
     margin: 0 auto; /* it centers any block level element */
   }
@@ -193,6 +215,12 @@ html, body { height: 100%; }
 	padding-bottom: 10100px;
 }
 
+@media only screen and (max-width:768px){
+  #navbar-container, #body-container{
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+  }
+}
 
 #navbar-container{
   background: #B0BEC5;
@@ -300,3 +328,9 @@ footer{
     text-align:center;
   }
 }
+
+
+.slider-container{
+  background-color:#B0BEC5;
+}
+
